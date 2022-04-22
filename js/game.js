@@ -6,6 +6,11 @@
 // Created on: Apr 2022
 // This file contains the JS functions for index.html
 
+import SplashScene from './splashScene.js'
+
+// Our game scene
+const splashScene = new SplashScene()
+
 //* Game Scene */
 const config = {
   type: Phaser.AUTO,
@@ -17,7 +22,7 @@ const config = {
       debug: true
     }
   },
-  // set background color  
+  // set backround color
   backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.Fit,
@@ -27,4 +32,10 @@ const config = {
 }
 
 const game = new Phaser.Game(config)
-console.log(game)
+
+// load scenes
+// Note: remember any "key" is global and CAN NOT be reused!
+game.scene.add('splashScene', splashScene)
+
+// start title
+game.scene.start('splashScene')
