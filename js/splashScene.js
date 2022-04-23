@@ -7,21 +7,21 @@
 // This file contains the JS functions for index.html
 
 class SplashScene extends Phaser.Scene {
-  constructor() {
+  constructor () {
     super({ key: "splashScene" })
   }
 
-  init(data) {
+  init (data) {
     this.camera.main.setBackroundColor("#ffffff")
   }
 
-  preload() {
+  preload () {
     console.log("Splash Scene")
   }
 
-  create(data) {}
+  create (data) {}
 
-  update(time, delta) {}
+  update (time, delta) {}
 }
 
 export default SplashScene
