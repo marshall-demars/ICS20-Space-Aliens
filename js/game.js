@@ -23,8 +23,8 @@ const config = {
       debug: true,
     },
   },
-  // set backround color
-  backgroundColor: 0x5f6e7a,
+  // set background color
+  backgroundColor: 0xffffff,
   scale: {
     mode: Phaser.Scale.Fit,
     // we place it in the middle of the page
