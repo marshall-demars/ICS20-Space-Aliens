@@ -14,7 +14,7 @@ class GameScene extends Phaser.Scene {
    * This method is the construtor.
    */
   constructor() {
-    super({ key: 'gameScene' })
+    super({ key: "gameScene" })
   }
 
   /**
