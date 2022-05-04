@@ -58,7 +58,7 @@ class MenuScene extends Phaser.Scene {
 
   /**
    * This method is the update.
-   */  
+   */
   clickButton() {
     this.scene.start("gameScene")
     // pass
