@@ -14,7 +14,9 @@ class GameScene extends Phaser.Scene {
    * This method is the construtor.
    */
 
-  // create an alien
+  /**
+   * This creates an alien
+   */
   createAlien () {
     const alienXLocation = Math.floor(Math.random() * 1920) + 1 // this will get a number between 1 and 1920
     let alienXVelocity = Math.floor(Math.random() * 50) + 1 // this will get a number between 1 and 50
@@ -24,7 +26,9 @@ class GameScene extends Phaser.Scene {
     anAlien.body.velocity.x = alienXVelocity
     this.alienGroup.add(anAlien)
   }
-  // constructor
+  /**
+   * constructor
+   */
   constructor() {
     super({ key: "gameScene" })
 
